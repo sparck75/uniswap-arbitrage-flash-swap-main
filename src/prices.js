@@ -25,7 +25,6 @@ module.exports.getPrices = async () => {
         prices['0x715d400f88c167884bbcc41c5fea407ed4d2f8a0'.toLowerCase()] = json["axie-infinity"].usd;
         prices['0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82'.toLowerCase()] = json.cake.usd;
         prices['0x9e5965d28E8D44CAE8F9b809396E0931F9Df71CA'.toLowerCase()] = json.space.usd;
-        prices['0x8595f9da7b868b1822194faed312235e43007b49'.toLowerCase()] = json.bittorrent.usd;
         prices['0xe48a3d7d0bc88d552f730b62c006bc925eadb9ee'.toLowerCase()] = json["frax-share"].usd;
         prices['0x947950bcc74888a40ffa2593c5798f11fc9124c4'.toLowerCase()] = json.sushi.usd;
 

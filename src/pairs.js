@@ -138,12 +138,6 @@ const CAKE_MAINNET = {
     contract: "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
 };
 
-const BTT_MAINNET = {
-    name: "BitTorrent",
-    symbol: "BTT",
-    contract: "0x8595f9da7b868b1822194faed312235e43007b49",
-};
-
 const SIP_MAINNET = {
     name: "Space SIP",
     symbol: "SIP",
