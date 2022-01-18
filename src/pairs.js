@@ -182,7 +182,7 @@ module.exports.getPairs = () => {
 
     const tokenPairs = [];
 
-    function ePairs(arr) {
+    function pair(arr) {
         var res = [],
             l = arr.length;
         for(var i=0; i<l; ++i)
@@ -191,16 +191,8 @@ module.exports.getPairs = () => {
         return res;
     }
 
-    function tPairs(arr) {
-        var res = [],
-            l = arr.length;
-        for(var i=0; i<l; ++i)
-                res.push([arr[0], arr[i]]);
-        return res;
-    }
-
-    ePairs(exchanges).forEach(function(exchange){
-        tPairs(tokens).forEach(function(token){
+    pair(exchanges).forEach(function(exchange){
+        pair(tokens).forEach(function(token){
             let temp = {
                 name: `${token[1].symbol}/${token[0].symbol} ${exchange[0].name}>${exchange[1].name}`,
                 tokenBorrow: token[1].contract,
