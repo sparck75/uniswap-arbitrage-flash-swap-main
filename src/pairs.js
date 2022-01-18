@@ -138,10 +138,28 @@ const CAKE_MAINNET = {
     contract: "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
 };
 
+const BTT_MAINNET = {
+    name: "BitTorrent",
+    symbol: "BTT",
+    contract: "0x8595f9da7b868b1822194faed312235e43007b49",
+};
+
 const SIP_MAINNET = {
     name: "Space SIP",
     symbol: "SIP",
     contract: "0x9e5965d28E8D44CAE8F9b809396E0931F9Df71CA",
+};
+
+const FXS_MAINNET = {
+    name: "Frax Share",
+    symbol: "FXS",
+    contract: "0xe48a3d7d0bc88d552f730b62c006bc925eadb9ee",
+};
+
+const SUSHI_MAINNET = {
+    name: "Sushi",
+    symbol: "Sushi",
+    contract: "0x947950bcc74888a40ffa2593c5798f11fc9124c4",
 };
 
 const tokens = [
@@ -160,6 +178,11 @@ const tokens = [
     TRX_MAINNET,
     XLM_MAINNET,
     AXS_MAINNET,
+    CAKE_MAINNET,
+    BTT_MAINNET,
+    SIP_MAINNET,
+    FXS_MAINNET,
+    SUSHI_MAINNET,
 ];
 
 module.exports.getPairs = () => {
@@ -186,9 +209,9 @@ module.exports.getPairs = () => {
     ePairs(exchanges).forEach(function(exchange){
         tPairs(tokens).forEach(function(token){
             let temp = {
-                name: `${token[0].symbol}/${token[1].symbol} ${exchange[0].name}>${exchange[1].name}`,
+                name: `${token[1].symbol}/${token[0].symbol} ${exchange[0].name}>${exchange[1].name}`,
                 tokenBorrow: token[1].contract,
-                amountTokenPay: 100000,
+                amountTokenPay: 10000,
                 tokenPay: token[0].contract,
                 sourceRouter: exchange[0].router,
                 targetRouter: exchange[1].router,
