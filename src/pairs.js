@@ -173,7 +173,6 @@ const tokens = [
     XLM_MAINNET,
     AXS_MAINNET,
     CAKE_MAINNET,
-    BTT_MAINNET,
     SIP_MAINNET,
     FXS_MAINNET,
     SUSHI_MAINNET,
